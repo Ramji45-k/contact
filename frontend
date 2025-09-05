@@ -1,1 +1,37 @@
-
+<!-- Contact Book HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Book</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    .contact-book { max-width: 400px; margin: auto; }
+    form { margin-bottom: 20px; }
+    input, button { margin: 5px 0; padding: 8px; width: 100%; }
+    ul { list-style: none; padding: 0; }
+    li { background: #f4f4f4; margin-bottom: 8px; padding: 10px; border-radius: 4px; }
+    .delete-btn { float: right; background: #e74c3c; color: #fff; border: none; padding: 4px 8px; border-radius: 3px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="contact-book">
+    <h1>Contact Book</h1>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="text" placeholder="Phone" required>
+      <button type="submit">Add Contact</button>
+    </form>
+    <ul>
+      <li>
+        John Doe - 1234567890
+        <button class="delete-btn">Delete</button>
+      </li>
+      <li>
+        Jane Smith - 9876543210
+        <button class="delete-btn">Delete</button>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
